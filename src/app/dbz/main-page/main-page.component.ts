@@ -20,8 +20,12 @@ export class MainPageComponent {
   ];
 
     nuevo: Personaje = { //Este nuevo personaje se envia por al @Input que esta en el componente agregar
-    nombre: 'Maestro Roshi',
-    poder: 1000
+      nombre: 'Maestro Roshi',
+      poder: 1000
+    }
+
+    agregarNuevoPersonaje(argumento: Personaje){
+      this.personajes.push(argumento);
     }
 
 
